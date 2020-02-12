@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feb 11 git lab question 4</title>
+</head>
+<body>
+    
+</body>
+<script>
+// This is an anonymous function declaration
+
+arr = [1,2,3,4];
+
+items = arr.map(function(x) {
+  return Math.pow(x, 2);
+});
+
+console.log(items);  // Returns [1, 4, 9, 16]
+
+// Declaring the function
+
+    arr = [1,2,3,4];
+function squareIt(x) {
+    return Math.pow(x, 2);
+  }
+  
+  otherItems = arr.map(squareIt);
+  
+  console.log(otherItems);  // Returns [1, 4, 9, 16]
+
+/* The map() method creates a new array with the results of calling a function for every array element.
+  It calls the provided function once for each element in an array, in order. map() is considered a callback 
+  function because it creates a new array populated with the results of calling a provided function on every element in the array.*/
+    
+</script>
+</html>
