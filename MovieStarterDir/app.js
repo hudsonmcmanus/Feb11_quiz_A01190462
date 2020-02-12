@@ -27,7 +27,7 @@ function clearMovies() {
 }
 
 function updateMovieHistory(movie) {
-
+    //This updates the movie history to the local storage
     var myTable= `
     <h5 class="card-title">Movie History</h5>
     <table id="movieHistoryTable">
@@ -45,10 +45,10 @@ function updateMovieHistory(movie) {
     movieHistory.innerHTML = myTable;
 }
 
-function keyExists(value, obj) {
-    obj = Object.keys(obj); 
-    for (var i = 0; i < obj.length; i++) {
-      if (value.toLowerCase() === obj[i].toLowerCase()) { return obj[i]; }
+function keyExists(value, object) {
+    object = Object.keys(object); 
+    for (var i = 0; i < object.length; i++) {
+      if (value.toLowerCase() === object[i].toLowerCase()) { return object[i]; }
     }
     return false;
   }
